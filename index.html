@@ -264,6 +264,36 @@ h2 {
   max-width: 68ch;
 }
 
+/* WRITING */
+.writing-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+
+.writing-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.writing-list a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px dotted transparent;
+}
+.writing-list a:hover { color: var(--accent); border-color: var(--accent); }
+
+.writing-list .date {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.footnote { font-size: 13.5px; color: var(--ink-soft); margin-top: 16px; }
+
 /* CONTACT */
 .contact-cta {
   display: flex;
@@ -470,6 +500,21 @@ footer {
   <section>
     <h2>Network</h2>
     <p class="network-note">Active relationships across strategic acquirers, private equity sponsors, and family offices in the technology sector — part of UK M&amp;A intermediary networks and the UK–India investment community.</p>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <ul class="writing-list">
+      <li><a href="https://medium.com/@sudiipmaathur/the-margin-math-8d7938bc25ae" target="_blank" rel="noopener">The Margin Math</a><span class="date">Apr 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/ai-native-vs-ai-enabled-vs-ai-exposed-a3296a04050b" target="_blank" rel="noopener">AI-Native vs AI-Enabled vs AI-Exposed</a><span class="date">Apr 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/what-buyers-ask-about-ai-in-diligence-6b106596dc11" target="_blank" rel="noopener">What Buyers Ask About AI in Diligence</a><span class="date">Apr 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/the-honest-conversation-about-billable-hours-1d4eed7a0584" target="_blank" rel="noopener">The Honest Conversation About Billable Hours</a><span class="date">Apr 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/three-more-paths-out-of-the-plateau-and-how-to-choose-yours-1e3207c0b1f5" target="_blank" rel="noopener">Three More Paths Out of the Plateau (And How to Choose Yours)</a><span class="date">Mar 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/the-ipo-play-why-some-it-founders-should-be-building-listed-companies-bab7818122de" target="_blank" rel="noopener">The IPO Play: Why Some IT Founders Should Be Building Listed Companies</a><span class="date">Mar 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/stop-waiting-to-be-acquired-start-acquiring-a8583856a666" target="_blank" rel="noopener">Stop Waiting to Be Acquired. Start Acquiring.</a><span class="date">Mar 2026</span></li>
+      <li><a href="https://medium.com/@sudiipmaathur/taking-money-without-losing-your-company-the-strategic-investment-path-3661e14c627a" target="_blank" rel="noopener">Taking Money Without Losing Your Company: The Strategic Investment Path</a><span class="date">Mar 2026</span></li>
+    </ul>
+    <p class="footnote">More essays on <a href="https://medium.com/@sudiipmaathur" target="_blank" rel="noopener">Medium</a>.</p>
   </section>
 
   <section>
