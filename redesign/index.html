@@ -125,13 +125,18 @@ a { color: inherit; }
 .photo-slot {
   aspect-ratio: 4 / 5;
   border-radius: 8px;
-  border: 1.5px dashed rgba(230,200,150,0.45);
+  overflow: hidden;
+  border: 1px solid rgba(230,200,150,0.25);
   background: rgba(255,255,255,0.04);
+}
+.photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-slot.empty {
+  border: 1.5px dashed rgba(230,200,150,0.45);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 10px; text-align: center; padding: 20px;
 }
-.photo-slot svg { width: 40px; height: 40px; color: rgba(230,200,150,0.5); }
-.photo-slot span { font-size: 12px; color: rgba(230,200,150,0.65); font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+.photo-slot.empty svg { width: 40px; height: 40px; color: rgba(230,200,150,0.5); }
+.photo-slot.empty span { font-size: 12px; color: rgba(230,200,150,0.65); font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
 
 /* TRUST BAND */
 .trust-band { background: var(--paper-alt); border-bottom: 1px solid var(--rule); padding: 26px 0; }
@@ -160,13 +165,18 @@ main section { padding: 80px 0; }
 .about-photo-slot {
   aspect-ratio: 4 / 5;
   border-radius: 8px;
-  border: 1.5px dashed var(--rule);
+  overflow: hidden;
+  border: 1px solid var(--rule);
   background: var(--paper-alt);
+}
+.about-photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-photo-slot.empty {
+  border: 1.5px dashed var(--rule);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 8px; text-align: center; padding: 16px;
 }
-.about-photo-slot svg { width: 32px; height: 32px; color: var(--ink-soft); opacity: 0.5; }
-.about-photo-slot span { font-size: 11px; color: var(--ink-soft); font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
+.about-photo-slot.empty svg { width: 32px; height: 32px; color: var(--ink-soft); opacity: 0.5; }
+.about-photo-slot.empty span { font-size: 11px; color: var(--ink-soft); font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; }
 .about-copy p { font-size: 16.5px; color: var(--ink); margin: 0 0 16px; max-width: 68ch; }
 .about-copy p.lead { font-size: 18.5px; font-family: 'Source Serif 4', serif; color: var(--navy); line-height: 1.5; }
 :root[data-theme="dark"] .about-copy p.lead { color: #e7ebef; }
@@ -383,8 +393,7 @@ footer.site-footer a { color: #c7cedb; text-decoration: none; }
       </div>
     </div>
     <div class="photo-slot">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-      <span>Headshot pending</span>
+      <img src="photos/IMG_1334.jpeg" alt="Sudeep Mathur working" width="608" height="810">
     </div>
   </div>
 </header>
@@ -414,8 +423,7 @@ footer.site-footer a { color: #c7cedb; text-decoration: none; }
       </div>
       <div class="about-grid">
         <div class="about-photo-slot">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-          <span>Photo pending</span>
+          <img src="photos/IMG_1215.jpeg" alt="Sudeep Mathur" width="323" height="286">
         </div>
         <div class="about-copy">
           <p class="lead">Sudeep is a Partner at Ecosystem Ventures, leading M&amp;A advisory mandates for mid-market technology and IT services companies across the UK, India, and Australia — running buy-side and sell-side processes end-to-end, from target identification through term sheet negotiation to close.</p>
